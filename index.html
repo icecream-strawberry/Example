@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<a href="https://www.google.co.jp/">
+    <div class="floating-banner">
+      <div class="banner">
+        <p class="copy"><br class="sp"></p>
+        <p class="cta"></p>
+      </div>
+    </div>
+</a>
+<style>
+.floating-banner {
+    position: fixed;
+    z-index: 99999;
+    bottom: 500;
+    left: 0;
+}
+.banner {
+    width: 300px;/* バナーの横幅 */
+    padding: 40px 10px;
+    background: pink;
+    color: #fff;/* バナー内の文字色 */
+    font-weight: bold;
+    text-align: center;
+}
+.floating-banner a {
+    text-decoration: none;/* リンクに下線が入らないように */
+}
+.copy {
+    font-size: 28px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+.cta {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    background: linear-gradient(270deg, #00f7ff57 0%, #00f7ff57 100%); /* ボタンの背景 */
+    box-shadow: 0px 0px 30px pink; /* ボタンの影 */
+    border-radius: 25px;
+    margin: 0
+}
+@media screen and (max-width: 990px) {
+    .floating-banner {
+        display: inline-block;
+    }
+    .banner {
+        width: 100vw;
+        padding: 8px;
+    }
+    .sp {
+        display: none;
+    }
+    .copy {
+        font-size: 18px;
+        margin: 0 auto 6px;
+    }
+    .cta {
+        height: 28px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .floating-banner {
+        display: inline-block;
+    }
+    .banner {
+        width: 100vw;
+        padding: 8px;
+    }
+    .sp {
+        display: none;
+    }
+    .copy {
+        font-size: 18px;
+        margin: 0 auto 6px;
+    }
+    .cta {
+        height: 28px;
+        line-height: 28px;
+        font-size: 15px;
+    }
+}
+</style>
